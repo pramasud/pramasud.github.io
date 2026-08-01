@@ -15,17 +15,9 @@
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
-@import url(animate.min.css);
-@import url(normalize.css);
 @import url(icomoon.css);
 @import url(font-awesome.min.css);
-@import url(meanmenu.css);
 @import url(owl.carousel.min.css);
-@import url(swiper.min.css);
-@import url(slick.css);
-@import url(jquery.fancybox.min.css);
-@import url(jquery-ui.css);
-@import url(nice-select.css);
 
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
@@ -51,6 +43,10 @@ body {
      background-size: cover;
      background-position: center;
      background-repeat: no-repeat;
+}
+
+body.about-page {
+     background-attachment: fixed;
 }
 
 a {
@@ -410,7 +406,8 @@ ul.email li i {
 
 ul.conta_top {
      display: flex;
-     align-items: center;
+     flex-direction: column;
+     align-items: flex-start;
      flex-wrap: wrap;
      padding-top: 25px;
 }
@@ -508,7 +505,7 @@ ul.conta_top li a {
      font-size: 20px;
      opacity: 1;
      border-radius: 50px;
-     top: 100%;
+     top: 85%;
 }
 
 #carouselExampleIndicators .carousel-control-prev {
@@ -545,16 +542,6 @@ ul.conta_top li a {
      padding: 90px 0;
      margin-top: 180px;
      position: relative;
-}
-
-.about::before {
-     position: absolute;
-     content: "";
-     background: url(../images/about_left.png);
-     background-repeat: no-repeat;
-     width: 360px;
-     height: 212px;
-     top: 0;
 }
 
 .about .titlepage {
@@ -624,11 +611,251 @@ ul.conta_top li a {
 /** end quality **/
 
 
+/** gallery lightbox **/
+
+.quality-box img.gallery-thumb {
+     cursor: pointer;
+     transition: transform 0.2s;
+}
+
+.quality-box:hover img.gallery-thumb {
+     transform: scale(1.06);
+}
+
+#gallery-lightbox {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.85);
+     z-index: 99999;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 40px;
+     transition: opacity 0.2s;
+}
+
+#gallery-lightbox.gallery-lightbox-hidden {
+     opacity: 0;
+     pointer-events: none;
+}
+
+#gallery-lightbox img {
+     max-width: 90%;
+     max-height: 90%;
+     border-radius: 8px;
+     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+#gallery-lightbox-close {
+     position: absolute;
+     top: 24px;
+     right: 32px;
+     background: rgba(255, 255, 255, 0.15);
+     border: none;
+     color: #fff;
+     font-size: 2rem;
+     width: 48px;
+     height: 48px;
+     border-radius: 50%;
+     cursor: pointer;
+     line-height: 1;
+     transition: background 0.15s;
+}
+
+#gallery-lightbox-close:hover {
+     background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 576px) {
+     #gallery-lightbox {
+          padding: 16px;
+     }
+
+     #gallery-lightbox-close {
+          top: 14px;
+          right: 16px;
+          width: 40px;
+          height: 40px;
+          font-size: 1.6rem;
+     }
+}
+
+/** end gallery lightbox **/
+
+
+/** festivals section **/
+
+.festivals {
+     padding: 90px 0;
+     background: #f9f6f2;
+}
+
+.festivals .titlepage h2 {
+     color: #303030;
+}
+
+.festivals .titlepage p {
+     color: #555;
+}
+
+.festival-box {
+     background: #fff;
+     border-radius: 12px;
+     padding: 40px 25px;
+     text-align: center;
+     box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+     margin-bottom: 30px;
+     height: calc(100% - 30px);
+     transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.festival-box:hover {
+     transform: translateY(-6px);
+     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+.festival-icon {
+     width: 78px;
+     height: 78px;
+     border-radius: 50%;
+     background: #d96226;
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+     margin: 0 auto 20px;
+}
+
+.festival-box h4 {
+     font-size: 20px;
+     font-weight: 600;
+     color: #303030;
+     margin-bottom: 12px;
+}
+
+.festival-box p {
+     font-size: 15px;
+     line-height: 26px;
+     color: #666;
+     margin-bottom: 0;
+}
+
+/** end festivals section **/
+
+
+/** community section **/
+
+.community {
+     padding: 80px 0;
+     text-align: center;
+}
+
+.community .titlepage p {
+     max-width: 780px;
+     margin: 0 auto;
+     font-size: 17px;
+     line-height: 30px;
+}
+
+/** end community section **/
+
+
+/** events intro **/
+
+.events-intro {
+     padding: 50px 0 15px;
+}
+
+.inner_page .events-intro {
+     margin-top: 90px;
+}
+
+.events-intro .titlepage {
+     padding-bottom: 0;
+}
+
+.events-intro .titlepage h2 {
+     padding-bottom: 10px;
+}
+
+.events-intro .titlepage p {
+     padding-bottom: 0;
+     margin: 0;
+}
+
+/** end events intro **/
+
+
+/** events list **/
+
+.events-list-section {
+     background: #f9f6f2;
+     padding-top: 40px;
+     padding-bottom: 90px;
+}
+
+.events-column-title {
+     font-size: 22px;
+     font-weight: 600;
+     color: #303030;
+     margin-bottom: 24px;
+     text-align: center;
+}
+
+.event-box {
+     text-align: center;
+     height: auto;
+}
+
+.event-date {
+     display: inline-block;
+     background: #d96226;
+     color: #fff;
+     font-size: 13px;
+     font-weight: 600;
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     padding: 6px 16px;
+     border-radius: 20px;
+     margin-bottom: 16px;
+}
+
+.event-box.cultural .event-date {
+     background: #2f7a8c;
+}
+
+.event-box.cultural {
+     border-top: 4px solid #2f7a8c;
+}
+
+.event-box.puja {
+     border-top: 4px solid #d96226;
+}
+
+.events-empty-msg {
+     font-size: 18px;
+     color: #666;
+     text-align: center;
+     padding: 20px 0 40px;
+}
+
+/** end events list **/
+
+
 /** contact **/
 
 .contact {
      padding-bottom: 90px;
      padding-top: 88px;
+}
+
+.contact .titlepage p {
+     margin-top: 20px;
+     margin-bottom: 30px;
 }
 
 .main_form {
@@ -691,24 +918,24 @@ ul.conta_top li a {
 /** end contact **/
 
 
-/** honey_bg **/
+/** page_banner **/
 
-.honey_bg {
+.page_banner {
      margin: 0 auto;
      display: block;
 }
 
-.honey_bg figure {
+.page_banner figure {
      margin: 0;
 }
 
-.honey_bg figure img {
+.page_banner figure img {
      margin: 0 auto;
      display: block;
 }
 
 
-/** end honey_bg **/
+/** end page_banner **/
 
 
 /** footer **/
@@ -828,48 +1055,6 @@ ul.conta li a:hover {
 }
 
 
-/*newsletter*/
-
-.form_subscri {
-     margin-top: 10px;
-}
-
-.newsl {
-     margin-bottom: 15px;
-     width: 100%;
-     height: 48px;
-     background: #fff;
-     color: #9e9c9c;
-     font-size: 17px;
-     font-weight: normal;
-     border: inherit;
-     padding: 0 15px;
-     border-radius: 10px;
-}
-
-.subsci_btn {
-     font-size: 17px;
-     transition: ease-in all 0.5s;
-     background-color: #d96226;
-     color: #fff;
-     max-width: 270px;
-     width: 100%;
-     display: block;
-     height: 48px;
-     float: right;
-     line-height: 48px;
-     border-radius: 10px;
-}
-
-.subsci_btn:hover {
-     background-color: #000000;
-     transition: ease-in all 0.5s;
-     color: #fff;
-}
-
-
-/* end newsletter*/
-
 .copyright {
      margin-top: 60px;
      padding-bottom: 25px;
@@ -932,6 +1117,6 @@ ul.conta li a:hover {
      padding-bottom: 0;
 }
 
-.inner_page .honey_bg {
+.inner_page .page_banner {
      padding-top: 90px;
 }

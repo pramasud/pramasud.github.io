@@ -19,15 +19,17 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/logo.png" type="image/png" />
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <!-- Chatbot Widget CSS -->
+      <link rel="stylesheet" href="css/chatbot.css">
    </head>
    <!-- body -->
-   <body class="main-layout inner_page">
+   <body class="main-layout inner_page about-page">
       <!-- loader  -->
       <div class="loader_bg">
          <div class="loader"><img src="images/loading.gif" alt="#"/></div>
@@ -75,8 +77,7 @@
                   </div>
                   <div class="col-md-2">
                      <ul class="email text_align_right">
-                        <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                        <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
+                        <li><a href="Javascript:void(0)" title="Chat with us" onclick="if (window.ChatbotWidget) { window.ChatbotWidget.open(); }"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                      </ul>
                   </div>
                </div>
@@ -87,33 +88,92 @@
       <!-- about -->
       <div class="about">
          <div class="container">
-            <div class="row d_flex">
-               <div class="col-md-6">
-                  <div class="titlepage text_align_left">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
                      <h2>About Our Cultural Association</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are many variations of passages of Lorem Ipsum available, but the majority have sufferedThere are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                     </p>
-                     <a class="read_more" href="about.html">Read More</a>
-                  </div>
-               </div>
-               <div class="col-md-6">
-                  <div class="about_img text_align_center">
-                     <figure><img class="img_responsive" src="images/about.png" alt="#"/></figure>
+                     <p>Probaho Cultural Association is a registered Bengali cultural association based in Devanahalli, Bangalore, formed to bring together Bengali families in and around our community to celebrate our shared culture, traditions and festivities.</p>
+                     <p>We are entirely community-driven — every event we host is made possible by the time, effort and enthusiasm of our members. It is this spirit of togetherness that keeps our traditions alive, season after season, away from home.</p>
                   </div>
                </div>
             </div>
          </div>
       </div>
       <!-- end about -->
+      <!-- festivals -->
+      <div class="festivals">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Our Festivals</h2>
+                     <p>Through the year, we come together to celebrate the festivals that are closest to every Bengali heart.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="festival-box">
+                     <div class="festival-icon"><i class="fa fa-star" aria-hidden="true"></i></div>
+                     <h4>Durga Puja</h4>
+                     <p>Our flagship celebration and the heart of the Probaho calendar — days of pandal, rituals, cultural programs and community feasting.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="festival-box">
+                     <div class="festival-icon"><i class="fa fa-fire" aria-hidden="true"></i></div>
+                     <h4>Kali Puja</h4>
+                     <p>Honoring Maa Kali with rituals and devotion, celebrated with the same warmth and participation as our other festivities.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="festival-box">
+                     <div class="festival-icon"><i class="fa fa-book" aria-hidden="true"></i></div>
+                     <h4>Saraswati Puja</h4>
+                     <p>A celebration of learning and the arts, dedicated to the Goddess of knowledge, music and wisdom.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="festival-box">
+                     <div class="festival-icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+                     <h4>Poila Boishakh</h4>
+                     <p>Welcoming the Bengali New Year with cultural programs, food and festivities that celebrate our roots.</p>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-6">
+                  <div class="festival-box">
+                     <div class="festival-icon"><i class="fa fa-pencil" aria-hidden="true"></i></div>
+                     <h4>Rabindra &amp; Nazrul Jayanti</h4>
+                     <p>We occasionally come together to celebrate the birth anniversaries of Rabindranath Tagore and Kazi Nazrul Islam, honoring their contribution to Bengali literature and music.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end festivals -->
+      <!-- community -->
+      <div class="community">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage text_align_center">
+                     <h2>Community at Our Core</h2>
+                     <p>Probaho exists because of its members. From organizing pandal logistics to cultural performances, decorations to prasad — every festival we celebrate is a labour of love contributed by volunteers within our community. If you'd like to be a part of it, we'd love to have you join us.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end community -->
       <!--  footer -->
       <footer>
          <div class="footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-4 col-sm-6">
                      <div class="infoma text_align_left">
                         <h3>About</h3>
-                        <p class="ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedconsectetur </p>
+                        <p class="ipsum">A community-driven Bengali cultural association in Devanahalli, Bangalore, celebrating our festivals and traditions together.</p>
                         <ul class="social_icon">
                            <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                            <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -122,7 +182,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-4 col-sm-6">
                      <div class="infoma">
                         <h3>Adderess</h3>
                         <ul class="conta">
@@ -134,7 +194,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-3 pad_lrft col-sm-6">
+                  <div class="col-md-4 pad_lrft col-sm-6">
                      <div class="infoma">
                         <h3>Links</h3>
                         <ul class="fullink">
@@ -146,31 +206,13 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="infoma">
-                        <h3>Newsletter</h3>
-                        <form class="form_subscri">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <input class="newsl" placeholder="Your Name" type="text" name="Your Name">
-                              </div>
-                              <div class="col-md-12">
-                                 <input class="newsl" placeholder="Email" type="text" name="Email">
-                              </div>
-                              <div class="col-md-12">
-                                 <button class="subsci_btn">subscribe</button>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
                </div>
             </div>
             <div class="copyright">
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>© 2020 All Rights Reserved.  <a href="https://html.design/"> SKP</a></p>
+                        <p>© 2026 All Rights Reserved. SKP</p>
                      </div>
                   </div>
                </div>
@@ -184,5 +226,30 @@
       <script src="js/jquery-3.0.0.min.js"></script>
       <!-- sidebar -->
       <script src="js/custom.js"></script>
+
+      <!-- Chatbot Widget -->
+      <div id="chatbot-widget">
+         <button id="chatbot-toggle" title="Chat with us"><i class="fa fa-comments"></i></button>
+         <span id="chatbot-label">AI Chat</span>
+
+         <div id="chatbot-window" class="chatbot-hidden">
+            <div class="chatbot-header">
+               <h3>Probaho AI Assistant</h3>
+               <button id="chatbot-close" title="Close">&times;</button>
+            </div>
+
+            <div id="chatbot-messages"></div>
+
+            <div class="chatbot-input-area">
+               <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off" maxlength="2000" />
+               <button id="chatbot-send" title="Send"><i class="fa fa-paper-plane"></i></button>
+            </div>
+         </div>
+      </div>
+
+      <!-- Chatbot Configuration (must load first) -->
+      <script src="js/chatbot-config.js"></script>
+      <!-- Chatbot Main Script -->
+      <script src="js/chatbot.js"></script>
    </body>
 </html>

@@ -19,12 +19,14 @@
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="images/logo.png" type="image/png" />
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      <!-- Chatbot Widget CSS -->
+      <link rel="stylesheet" href="css/chatbot.css">
    </head>
    <!-- body -->
    <body class="main-layout inner_page">
@@ -63,10 +65,10 @@
                               <li class="nav-item">
                                  <a class="nav-link" href="events.html">Events</a>
                               </li>
-                              <li class="nav-item">
+                              <li class="nav-item active">
                                  <a class="nav-link" href="gallery.html">Gallery</a>
                               </li>
-                              <li class="nav-item active">
+                              <li class="nav-item">
                                  <a class="nav-link" href="contact.html">Contact Us</a>
                               </li>
                            </ul>
@@ -75,8 +77,7 @@
                   </div>
                   <div class="col-md-2">
                      <ul class="email text_align_right">
-                        <li class="d_none"><a href="Javascript:void(0)"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                        <li class="d_none"> <a href="Javascript:void(0)"><i class="fa fa-search" style="cursor: pointer;" aria-hidden="true"></i></a> </li>
+                        <li><a href="Javascript:void(0)" title="Chat with us" onclick="if (window.ChatbotWidget) { window.ChatbotWidget.open(); }"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                      </ul>
                   </div>
                </div>
@@ -99,46 +100,43 @@
             <div class="row">
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality11.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg1.png" data-full="images/DurgaImg1.jpg" alt="Durga Puja"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality12.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg2.png" data-full="images/DurgaImg2.jpg" alt="Durga Puja"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality13.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg3.png" data-full="images/DurgaImg3.jpeg" alt="Durga Puja"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality11.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg4.png" data-full="images/DurgaImg4.jpeg" alt="Durga Puja"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality12.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg5.png" data-full="images/DurgaImg5.jpeg" alt="Durga Puja"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality13.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg6.png" data-full="images/DurgaImg6.jpg" alt="Durga Puja"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality11.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg7.png" data-full="images/DurgaImg7.jpeg" alt="Durga Puja"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
                   <div class="quality-box ">
-                     <figure><img src="images/quality12.png" alt="#"/></figure>
+                     <figure><img class="gallery-thumb" src="images/DurgaImg8.png" data-full="images/DurgaImg8.jpeg" alt="Durga Puja"/></figure>
                   </div>
-               </div>
-               <div class="col-sm-12">
-                  <a class="read_more" href="Javascript:void(0)">See More</a>
                </div>
             </div>
          </div>
@@ -149,10 +147,10 @@
          <div class="footer">
             <div class="container">
                <div class="row">
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-4 col-sm-6">
                      <div class="infoma text_align_left">
                         <h3>About Our Cultural Association</h3>
-                        <p class="ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedconsectetur </p>
+                        <p class="ipsum">A community-driven Bengali cultural association in Devanahalli, Bangalore, celebrating our festivals and traditions together.</p>
                         <ul class="social_icon">
                            <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                            <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -161,7 +159,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-3 col-sm-6">
+                  <div class="col-md-4 col-sm-6">
                      <div class="infoma">
                         <h3>Adderess</h3>
                         <ul class="conta">
@@ -173,7 +171,7 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-3 pad_lrft col-sm-6">
+                  <div class="col-md-4 pad_lrft col-sm-6">
                      <div class="infoma">
                         <h3>Links</h3>
                         <ul class="fullink">
@@ -185,31 +183,13 @@
                         </ul>
                      </div>
                   </div>
-                  <div class="col-md-3 col-sm-6">
-                     <div class="infoma">
-                        <h3>Newsletter</h3>
-                        <form class="form_subscri">
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <input class="newsl" placeholder="Your Name" type="text" name="Your Name">
-                              </div>
-                              <div class="col-md-12">
-                                 <input class="newsl" placeholder="Email" type="text" name="Email">
-                              </div>
-                              <div class="col-md-12">
-                                 <button class="subsci_btn">subscribe</button>
-                              </div>
-                           </div>
-                        </form>
-                     </div>
-                  </div>
                </div>
             </div>
             <div class="copyright">
                <div class="container">
                   <div class="row">
                      <div class="col-md-12">
-                        <p>© 2020 All Rights Reserved.  <a href="https://html.design/"> SKP</a></p>
+                        <p>© 2026 All Rights Reserved. SKP</p>
                      </div>
                   </div>
                </div>
@@ -223,5 +203,37 @@
       <script src="js/jquery-3.0.0.min.js"></script>
       <!-- sidebar -->
       <script src="js/custom.js"></script>
+
+      <!-- Gallery Lightbox -->
+      <div id="gallery-lightbox" class="gallery-lightbox-hidden">
+         <button id="gallery-lightbox-close" title="Close">&times;</button>
+         <img id="gallery-lightbox-img" src="" alt="" />
+      </div>
+      <script src="js/gallery-lightbox.js"></script>
+
+      <!-- Chatbot Widget -->
+      <div id="chatbot-widget">
+         <button id="chatbot-toggle" title="Chat with us"><i class="fa fa-comments"></i></button>
+         <span id="chatbot-label">AI Chat</span>
+
+         <div id="chatbot-window" class="chatbot-hidden">
+            <div class="chatbot-header">
+               <h3>Probaho AI Assistant</h3>
+               <button id="chatbot-close" title="Close">&times;</button>
+            </div>
+
+            <div id="chatbot-messages"></div>
+
+            <div class="chatbot-input-area">
+               <input type="text" id="chatbot-input" placeholder="Type your message..." autocomplete="off" maxlength="2000" />
+               <button id="chatbot-send" title="Send"><i class="fa fa-paper-plane"></i></button>
+            </div>
+         </div>
+      </div>
+
+      <!-- Chatbot Configuration (must load first) -->
+      <script src="js/chatbot-config.js"></script>
+      <!-- Chatbot Main Script -->
+      <script src="js/chatbot.js"></script>
    </body>
 </html>
