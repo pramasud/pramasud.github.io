@@ -54,6 +54,9 @@ this exactly or they'll look inconsistent in the grid.
 
 - Default target size is 623x733 (matches `quality11.png`). Only override
   with `--size WxH` if the user explicitly asks for a different grid/shape.
+- For tall posters where faces sit near the top, the default center crop
+  cuts them off. Pass `--vertical 0.15` (0 = top, 0.5 = center) to shift
+  the crop upward, and check the preview again.
 - The script always overwrites the output `.png` — if the user says
   "reprocess" or "redo" an image, just re-run the script on the (possibly
   replaced) source file rather than asking clarifying questions about the
